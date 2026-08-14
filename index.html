@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCEND Événements | Partenariats Restos & Bars</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0A0512',
+                            card: '#140A26',
+                            purple: '#8B5CF6',
+                            magenta: '#E024C3',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased selection:bg-brand-magenta selection:text-white">
 
+    <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-purple-900/30">
+        <div class="flex items-center space-x-3">
+            <span class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-brand-magenta">
+                ASCEND <span class="text-xs text-purple-400 block tracking-widest font-normal">- É V É N E M E N T S -</span>
+            </span>
+        </div>
+        <div>
+            <a href="events.html" class="text-sm text-gray-300 hover:text-brand-magenta transition mr-6">Espace Joueurs</a>
+            <a href="#booking" class="bg-gradient-to-r from-brand-purple to-brand-magenta text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg shadow-purple-500/25 hover:opacity-90 transition">
+                Réserver un Test
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-12 pb-20 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="inline-block px-4 py-1.5 rounded-full bg-purple-950/60 border border-brand-purple/40 text-brand-magenta text-xs font-bold uppercase tracking-wider mb-6">
+                Partenariat Établissements
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                Transformez vos mardis et mercredis soirs en <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-magenta">heures de pointe</span>.
+            </h1>
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                ASCEND apporte 30 à 50 clients captifs dans votre établissement avec des animations Pop-Culture clés en main, sans aucun frais fixe pour vous.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#booking" class="text-center bg-gradient-to-r from-brand-purple to-brand-magenta px-8 py-4 rounded-xl font-bold shadow-xl shadow-brand-magenta/20 hover:scale-105 transition transform">
+                    Lancer une soirée test sans engagement
+                </a>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-purple to-brand-magenta rounded-2xl blur-xl opacity-30"></div>
+            <div class="relative bg-brand-card border border-purple-500/30 rounded-2xl p-4 overflow-hidden shadow-2xl">
+                <img src="assets/images/hero-tournoi.png" alt="Tournoi One Piece Card Game" class="rounded-xl w-full object-cover h-80" onerror="this.src='https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Key Metrics -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-brand-card/60 backdrop-blur-md border border-purple-500/20 rounded-2xl p-8 hover:border-brand-magenta/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-900/50 flex items-center justify-center text-brand-magenta text-2xl mb-4">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-gray-400 text-sm font-semibold uppercase">Investissement</h3>
+                <p class="text-3xl font-extrabold text-white mt-1">0 € pour vous</p>
+                <p class="text-gray-400 text-sm mt-2">Aucun frais fixe, zéro risque financier pour l'établissement.</p>
+            </div>
+
+            <div class="bg-brand-card/60 backdrop-blur-md border border-purple-500/20 rounded-2xl p-8 hover:border-brand-magenta/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-900/50 flex items-center justify-center text-brand-magenta text-2xl mb-4">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 class="text-gray-400 text-sm font-semibold uppercase">Fréquentation</h3>
+                <p class="text-3xl font-extrabold text-white mt-1">+30 à 50 clients</p>
+                <p class="text-gray-400 text-sm mt-2">Une communauté passionnée captive pendant 3 heures dans votre salle.</p>
+            </div>
+
+            <div class="bg-brand-card/60 backdrop-blur-md border border-purple-500/20 rounded-2xl p-8 hover:border-brand-magenta/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-900/50 flex items-center justify-center text-brand-magenta text-2xl mb-4">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3 class="text-gray-400 text-sm font-semibold uppercase">Chiffre d'Affaires</h3>
+                <p class="text-3xl font-extrabold text-white mt-1">+750 € F&B</p>
+                <p class="text-gray-400 text-sm mt-2">CA additionnel boissons/restauration (panier moyen 15€/personne).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concepts Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Nos Formats d'Animations Clés en Main</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-brand-card border border-purple-900/40 rounded-2xl p-6">
+                <i class="fa-solid fa-gamepad text-3xl text-brand-purple mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Tournois Pop-Culture</h3>
+                <p class="text-gray-400 text-sm">Compétitions TCG (One Piece, Lorcana), gaming et jeux de société à forte affluence.</p>
+            </div>
+            <div class="bg-brand-card border border-purple-900/40 rounded-2xl p-6">
+                <i class="fa-solid fa-palette text-3xl text-brand-magenta mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Art Battle & Custom</h3>
+                <p class="text-gray-400 text-sm">Ateliers de peinture de figurines avec Box Créatives, jury Cosplay et Cashprize.</p>
+            </div>
+            <div class="bg-brand-card border border-purple-900/40 rounded-2xl p-6">
+                <i class="fa-solid fa-shield-halved text-3xl text-brand-purple mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Gestion 100% Autonome</h3>
+                <p class="text-gray-400 text-sm">Billetterie, matériel, animation, sécurité et nettoyage pris en charge par nos soins.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section (Cal.com / Calendly Embed) -->
+    <section id="booking" class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-4">Planifions votre première soirée test</h2>
+        <p class="text-gray-400 mb-8">Choisissez un créneau de 15 minutes pour échanger sur la faisabilité dans votre établissement.</p>
+        
+        <div class="bg-brand-card border border-purple-500/30 rounded-2xl p-4 min-h-[450px] flex items-center justify-center">
+            <!-- Remplacez cette zone par l'iframe de votre Cal.com ou Calendly -->
+            <iframe src="https://cal.com/sales" class="w-full h-[500px] rounded-xl border-0" title="Prise de RDV"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-purple-900/30 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 ASCEND ÉVÉNEMENTS. Tous droits réservés. | ascendworld.co</p>
+    </footer>
+
+</body>
+</html>
