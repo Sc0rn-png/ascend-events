@@ -29,16 +29,15 @@
 <body class="bg-brand-dark text-white font-sans antialiased selection:bg-brand-magenta selection:text-white">
 
     <!-- Navbar -->
-    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-purple-900/30">
-        <div class="flex items-center space-x-3">
-            <span class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-brand-magenta">
-                ASCEND <span class="text-xs text-purple-400 block tracking-widest font-normal">- É V É N E M E N T S -</span>
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex justify-between items-center border-b border-purple-900/30">
+        <div class="flex items-center">
+            <span class="text-xl sm:text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-brand-magenta">
+                ASCEND <span class="text-[10px] sm:text-xs text-purple-400 block tracking-widest font-normal">- É V É N E M E N T S -</span>
             </span>
         </div>
         <div>
-            <a href="events.html" class="text-sm text-gray-300 hover:text-brand-magenta transition mr-6">Espace Joueurs</a>
-            <a href="#booking" class="bg-gradient-to-r from-brand-purple to-brand-magenta text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg shadow-purple-500/25 hover:opacity-90 transition">
-                Réserver un Test
+            <a href="#booking" class="bg-gradient-to-r from-brand-purple to-brand-magenta text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold shadow-lg shadow-purple-500/25 hover:opacity-90 transition whitespace-nowrap">
+                Réserver un test
             </a>
         </div>
     </nav>
@@ -119,6 +118,18 @@
                 <i class="fa-solid fa-shield-halved text-3xl text-brand-purple mb-4"></i>
                 <h3 class="text-xl font-bold mb-2">Gestion 100% Autonome</h3>
                 <p class="text-gray-400 text-sm">Billetterie, matériel, animation, sécurité et nettoyage pris en charge par nos soins.</p>
+            </div>
+        </div>
+
+        <!-- Accès Planning Joueurs -->
+        <div class="mt-12 text-center bg-brand-card/40 border border-purple-900/50 rounded-2xl p-6 max-w-2xl mx-auto">
+            <a href="events.html" class="inline-flex items-center justify-center bg-purple-950 hover:bg-purple-900 border border-purple-500/40 text-purple-200 hover:text-white font-semibold px-6 py-3 rounded-xl transition gap-2">
+                <i class="fa-solid fa-calendar-days text-brand-magenta"></i>
+                Voir le planning des joueurs
+            </a>
+            <div class="mt-4 flex items-center justify-center gap-2 text-xs text-amber-400/90 bg-amber-950/30 border border-amber-500/20 py-2 px-4 rounded-lg max-w-lg mx-auto">
+                <i class="fa-solid fa-triangle-exclamation shrink-0"></i>
+                <span><strong>Attention :</strong> Cette page est réservée aux professionnels. Une fois sur le planning joueurs, il faudra revenir manuellement sur cette page via votre navigateur.</span>
             </div>
         </div>
     </section>
