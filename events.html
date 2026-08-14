@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCEND | Événements & Calendrier Communautaire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0A0512',
+                            card: '#140A26',
+                            purple: '#8B5CF6',
+                            magenta: '#E024C3',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-purple-900/30">
+        <a href="index.html" class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-brand-magenta">
+            ASCEND
+        </a>
+        <a href="#request" class="bg-purple-900/50 border border-purple-500/30 px-4 py-2 rounded-full text-xs font-semibold hover:bg-purple-800/50 transition">
+            Demander un événement
+        </a>
+    </nav>
+
+    <!-- Upcoming Events Section -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-extrabold mb-2">Prochains Événements</h1>
+        <p class="text-gray-400 mb-8">Réservez votre place pour les prochains tournois et soirées Art Battle.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Event Card 1 -->
+            <div class="bg-brand-card border border-purple-500/30 rounded-2xl overflow-hidden hover:border-brand-magenta transition">
+                <div class="h-48 bg-purple-950 relative">
+                    <img src="assets/images/one-piece-card.jpg" alt="One Piece TCG" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80'">
+                    <span class="absolute top-3 right-3 bg-brand-magenta text-white text-xs font-bold px-3 py-1 rounded-full">32 Places</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-brand-purple font-semibold uppercase">Tournoi TCG</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">One Piece Card Game Open</h3>
+                    <p class="text-gray-400 text-sm mb-4"><i class="fa-regular fa-calendar mr-2"></i>Mardi 24 Septembre • 19h00</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-bold text-white">15 €</span>
+                        <a href="#" class="bg-gradient-to-r from-brand-purple to-brand-magenta px-4 py-2 rounded-lg text-sm font-semibold">Réserver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="bg-brand-card border border-purple-500/30 rounded-2xl overflow-hidden hover:border-brand-magenta transition">
+                <div class="h-48 bg-purple-950 relative">
+                    <img src="assets/images/custom-box.jpg" alt="Art Battle Custom" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=600&q=80'">
+                    <span class="absolute top-3 right-3 bg-brand-purple text-white text-xs font-bold px-3 py-1 rounded-full">Jury Cosplay</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-brand-magenta font-semibold uppercase">Art Battle & Custom Box</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">Custom Figurine Night #01</h3>
+                    <p class="text-gray-400 text-sm mb-4"><i class="fa-regular fa-calendar mr-2"></i>Mercredi 2 Octobre • 19h30</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-bold text-white">39 € <span class="text-xs font-normal text-gray-400">(Box incluse)</span></span>
+                        <a href="#" class="bg-gradient-to-r from-brand-purple to-brand-magenta px-4 py-2 rounded-lg text-sm font-semibold">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Event Module -->
+    <section id="request" class="max-w-3xl mx-auto px-6 py-16">
+        <div class="bg-brand-card border border-purple-500/30 rounded-2xl p-8 shadow-2xl">
+            <h2 class="text-2xl font-bold mb-2">Proposer un Événement dans votre Ville</h2>
+            <p class="text-gray-400 text-sm mb-6">Votez pour le thème et le jour que vous souhaitez voir au calendrier !</p>
+
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Catégorie souhaitée</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="border border-purple-900/50 p-3 rounded-xl flex items-center space-x-2 cursor-pointer hover:border-brand-magenta">
+                            <input type="radio" name="category" value="tcg" class="accent-brand-magenta" checked>
+                            <span class="text-sm">Tournoi TCG</span>
+                        </label>
+                        <label class="border border-purple-900/50 p-3 rounded-xl flex items-center space-x-2 cursor-pointer hover:border-brand-magenta">
+                            <input type="radio" name="category" value="custom" class="accent-brand-magenta">
+                            <span class="text-sm">Art Battle & Custom</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">Thème / Jeu spécifique</label>
+                    <input type="text" placeholder="ex: One Piece, Lorcana, Figurine Dragon Ball..." class="w-full bg-brand-dark border border-purple-900/60 rounded-xl p-3 text-sm focus:outline-none focus:border-brand-magenta">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">Jour préféré dans la semaine</label>
+                    <div class="flex flex-wrap gap-3">
+                        <label class="text-xs bg-purple-950/60 border border-purple-900/50 px-3 py-2 rounded-lg cursor-pointer"><input type="checkbox" class="mr-1"> Mardi</label>
+                        <label class="text-xs bg-purple-950/60 border border-purple-900/50 px-3 py-2 rounded-lg cursor-pointer"><input type="checkbox" class="mr-1"> Mercredi</label>
+                        <label class="text-xs bg-purple-950/60 border border-purple-900/50 px-3 py-2 rounded-lg cursor-pointer"><input type="checkbox" class="mr-1"> Jeudi</label>
+                        <label class="text-xs bg-purple-950/60 border border-purple-900/50 px-3 py-2 rounded-lg cursor-pointer"><input type="checkbox" class="mr-1"> Dimanche</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">Votre Ville / Secteur</label>
+                    <input type="text" placeholder="ex: Annecy, Genève, Chambéry..." class="w-full bg-brand-dark border border-purple-900/60 rounded-xl p-3 text-sm focus:outline-none focus:border-brand-magenta">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">Votre Email (pour vous prévenir de la date)</label>
+                    <input type="email" placeholder="votre@email.com" class="w-full bg-brand-dark border border-purple-900/60 rounded-xl p-3 text-sm focus:outline-none focus:border-brand-magenta">
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-brand-purple to-brand-magenta py-3.5 rounded-xl font-bold shadow-lg shadow-brand-magenta/20 hover:opacity-90 transition">
+                    Envoyer ma requête
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
